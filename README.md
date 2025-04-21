@@ -2,6 +2,7 @@
 
 A simple yet powerful Todo List app built using **vanilla JavaScript**, **HTML**, and **CSS** — no frameworks, just pure frontend skills.
 
+
 ## ✨ Features
 
 - ✅ Add, edit, and delete tasks

@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">Todo App</h1>
+    </header>
+
+    <div class="Btns">
+        <button class="today active">Today</button>
+        <button class="pendingBtn">Pending</button>
+        <button class="overDueBtn">Overdue</button>
+      </div>
+
+    <div class="Tasks-List">
+        <div class="Task">
+            <p>Tasks</p>
+            <button class="add">Add Task</button>
+        </div>
+        <div class="popup">
+        <input type="text" class="text" placeholder="Write your Task...">
+        <input type="date" class="dateInput" />
+        <div class="PostTask">
+            <button class="submit" onclick="Submit()">Submit</button>
+            <button class="cancel">Cancel</button>
+        </div>
+        </div>
+
+        <ul class="list">
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <script src="./App.js"></script>
+</body>
+
+</html>

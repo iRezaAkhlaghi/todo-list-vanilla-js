@@ -1,0 +1,204 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7FAFC;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 30px 0;
+    background-color: #2F855A;
+}
+
+.title {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.Btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Btns button {
+    border: none;
+    background-color: #68D391;
+    color: white;
+    font-size: 22px;
+    padding: 15px 40px;
+    margin: 0 1px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.Btns button.active {
+    background-color: #2F855A;
+}
+
+.Btns button:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.Btns button:nth-child(3) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.Task p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.Task .add {
+    border: none;
+    padding: 8px 30px;
+    background-color: #2F855A;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+.Tasks-List {
+    padding: 0 300px;
+    position: relative;
+
+}
+
+.Tasks-List ul {
+    list-style-type: none;
+    margin-top: 50px;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Tasks-List ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+time {
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+}
+
+.add{
+    cursor: pointer;
+}
+
+.Crud {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: 0.2 ease-in-out;
+
+}
+
+.Crud p {
+    cursor: pointer;
+
+}
+
+.Crud p:hover {
+    scale: 1.07;
+}
+
+.delete {
+    color: #c80b0b;
+}
+
+.Tzone {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+.list li {
+    background-color: white;
+    margin: 5px 0px;
+    padding: 35px 25px;
+    border-radius: 10px;
+}
+
+.popup {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 20px 5px;
+    background-color: white;
+    z-index: 1;
+    width: 60%;
+    visibility: hidden;
+}
+
+.popup.active {
+    visibility: visible;
+}
+
+.popup input {
+    border: none;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.PostTask {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.PostTask button {
+    padding: 6px 18px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.PostTask button:hover {
+    scale: 0.93;
+}
+
+.PostTask .submit {
+    background-color: #2F855A;
+}
+
+.PostTask .cancel {
+    background-color: #c80b0b;
+}
